@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav>
+      <a href="index.html">About Me</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+
+    <!-- Form Header -->
+    <h1>Application Form</h1>
+
+    <p>Fill in your details.</p>
+
+    <!-- Apllication form -->
+    <form action="#" method="post">
+      <label for="firstName">First Name:</label><br />
+      <input
+        type="text"
+        placeholder="First Name"
+        id="firstName"
+        name="firstName"
+        required
+        minlength="2"
+      /><br /><br />
+
+      <label for="lastName">Last Name:</label><br />
+      <input
+        type="text"
+        placeholder="Last Name"
+        id="lastName"
+        name="lastName"
+        required
+        minlength="2"
+      /><br /><br />
+
+      <label for="gender">Gender:</label><br />
+      <select id="selectGender" name="gender" required>
+        <option value="Placeholder" disabled selected>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Prefer Not To Disclose</option></select
+      ><br /><br />
+
+      <label for="dob">Date of Birth:</label><br />
+      <input
+        type="date"
+        id="dob"
+        name="dob"
+        max="2007-01-01"
+        required
+      /><br /><br />
+
+      <label for="email">Email Address:</label><br />
+      <input
+        type="email"
+        placeholder="Enter email address"
+        id="email"
+        name="email"
+        required
+      /><br /><br />
+
+      <label for="eduLevel">Education Level:</label><br />
+      <select id="selectLevel" name="eduLevel" required>
+        <option value="Placeholder" disabled selected>
+          Select level of education
+        </option>
+        <option value="BSc">BSc</option>
+        <option value="MSc">MSc</option>
+        <option value="Diploma">Diploma</option>
+        <option value="PhD">Doctorate (PhD)</option>
+        <option value="secondarySchool">High School / Secondary School</option>
+        <option value="underGraduate">Under Graduate</option>
+        <option value="Junior">Junior / Middle School (PhD)</option>
+        <option value="postGraduate">Post Graduate</option>
+      </select>
+      <br /><br />
+
+      <label for="country">Country:</label><br />
+      <select id="selectCountry" name="country" required>
+        <option value="Placeholder" disabled selected>
+          Select your country
+        </option>
+        <option value="algeria">Algeria</option>
+        <option value="angola">Angola</option>
+        <option value="benin">Benin</option>
+        <option value="botswana">Botswana</option>
+        <option value="burkina-faso">Burkina Faso</option>
+        <option value="burundi">Burundi</option>
+        <option value="cabo-verde">Cabo Verde</option>
+        <option value="cameroon">Cameroon</option>
+        <option value="central-african-republic">
+          Central African Republic
+        </option>
+        <option value="chad">Chad</option>
+        <option value="comoros">Comoros</option>
+        <option value="democratic-republic-of-the-congo">
+          Democratic Republic of the Congo
+        </option>
+        <option value="djibouti">Djibouti</option>
+        <option value="egypt">Egypt</option>
+        <option value="equatorial-guinea">Equatorial Guinea</option>
+        <option value="eritrea">Eritrea</option>
+        <option value="eswatini">Eswatini</option>
+        <option value="ethiopia">Ethiopia</option>
+        <option value="gabon">Gabon</option>
+        <option value="gambia">Gambia</option>
+        <option value="ghana">Ghana</option>
+        <option value="guinea">Guinea</option>
+        <option value="guinea-bissau">Guinea-Bissau</option>
+        <option value="ivory-coast">Ivory Coast</option>
+        <option value="kenya">Kenya</option>
+        <option value="lesotho">Lesotho</option>
+        <option value="liberia">Liberia</option>
+        <option value="libya">Libya</option>
+        <option value="madagascar">Madagascar</option>
+        <option value="malawi">Malawi</option>
+        <option value="mali">Mali</option>
+        <option value="mauritania">Mauritania</option>
+        <option value="mauritius">Mauritius</option>
+        <option value="morocco">Morocco</option>
+        <option value="mozambique">Mozambique</option>
+        <option value="namibia">Namibia</option>
+        <option value="niger">Niger</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="rwanda">Rwanda</option>
+        <option value="sao-tome-and-principe">Sao Tome and Principe</option>
+        <option value="senegal">Senegal</option>
+        <option value="seychelles">Seychelles</option>
+        <option value="sierra-leone">Sierra Leone</option>
+        <option value="somalia">Somalia</option>
+        <option value="south-africa">South Africa</option>
+        <option value="south-sudan">South Sudan</option>
+        <option value="sudan">Sudan</option>
+        <option value="tanzania">Tanzania</option>
+        <option value="togo">Togo</option>
+        <option value="tunisia">Tunisia</option>
+        <option value="uganda">Uganda</option>
+        <option value="zambia">Zambia</option>
+        <option value="zimbabwe">Zimbabwe</option>
+      </select>
+      <br /><br />
+
+      <label for="city">State/City of Residence:</label><br />
+      <input
+        type="text"
+        id="city"
+        name="city"
+        placeholder="Enter your state of residence"
+        required
+      /><br /><br />
+
+      <label for="employment">Employment Status:</label><br />
+      <select id="employment" name="employmentStatus" required>
+        <option value="Placeholder" disabled selected>
+          Select employment status
+        </option>
+        <option value="employed">employed</option>
+        <option value="unemployed">unemployed</option>
+        <option value="selfEmployed">self-employed</option></select
+      ><br /><br />
+
+      <label for="phone">Phone Number:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="08154387000"
+        pattern="[0-9]{11}"
+        required
+      /><br /><br />
+
+      <label for="school">Choose School:</label><br />
+      <select id="school-select" name="school">
+        <option value="placeholder" disabled selected>Select School</option>
+        <option value="data">School of Data</option>
+        <option value="engineering">School of Engineering</option>
+        <option value="creativeEconomics">School of Creative Economics</option>
+        <option value="business">School of Business</option></select
+      ><br /><br />
+
+      <label for="course">Choose Course of Study:</label><br />
+      <select id="courseSelect" name="course" required>
+        <option value="placeholder" disabled>Select Course</option>
+        <option value="dataScience">Data Science</option>
+        <option value="dataAnalysis">Data Analysis</option>
+        <option value="frontEnd">Front-End Engineering</option>
+        <option value="backEnd">Back-End Engineering</option>
+        <option value="cloud">Cloud Engineering</option></select
+      ><br /><br />
+
+      <label for="how">How did you hear about us?</label><br />
+      <select id="channelSelect" name="channel" required>
+        <option value="placeholder" disabled>Select channel</option>
+        <option value="twitter">Twitter</option>
+        <option value="facebook">Facebook</option>
+        <option value="linkedin">Linkedin</option>
+        <option value="youtube">Youtube</option>
+        <option value="friend">Friend</option>
+        <option value="whatsapp">WhatsApp</option>
+        <option value="instagram">Instagram</option>
+        <option value="billBoard">Bill Board</option>
+        <option value="other">Other</option></select
+      ><br /><br />
+
+      <label for="code">Scholarship/Discount Code (Optional)</label><br />
+      <input type="text" id="code" name="code" /><br /><br />
+
+      <p>
+        By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I
+        have read the <a href="#">Privacy Policy</a>.
+      </p>
+
+      <input id="submit" type="submit" value="Proceed" />
+    </form>
+    <p>Already have an account? <a href="#">Sign in</a></p>
+  </body>
+</html>
